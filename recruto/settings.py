@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-fe)y5ck%-^w!c_q1xpj8p
 # DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['enigmatic-sea-41444.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
