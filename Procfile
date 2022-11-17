@@ -1,0 +1,1 @@
+web: gunicorn recruto.wsgi --log-file -

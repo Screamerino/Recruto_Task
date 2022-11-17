@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+    <style>
+        a {
+            margin-top: 50px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+{% if form is None %}
+    <h1>{{ name }}! {{ message }}!</h1>
+    <a href="/">Return to the form</a>
+{% else %}
+    <h2>Please enter name and greeting message</h2>
+    <form>
+        {% for field in form %}
+            {{ field.errors }} <br>
+            {{ field.label_tag }} <br>
+            {{ field }} <br>
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+{% endif %}
+</body>
+</html>
